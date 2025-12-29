@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(254, 137, 137);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Content {
+  width: 20rem;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: rgb(242, 181, 181);
+}
+.Content h1 {
+  padding-bottom: 2rem;
+  text-shadow: white 2px 0;
+}
+.Content h2 {
+  padding-bottom: 1.2rem;
+}
+.Content p {
+  padding-bottom: 0.6rem;
+  text-decoration: none;
+}
+.Content a {
+  text-decoration: none;
+}
