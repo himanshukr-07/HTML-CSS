@@ -1,59 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-body{
-  background-image: url('background.jpg');
-  background-size: cover; /* Adjust the image size */
-  background-position: center; /* Position the image */
-  background-repeat: no-repeat; 
 }
 
-.container
-{
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
     min-height: 100vh;
-    border: 10px solid #000 ;
+    border: 10px solid #000;
     display: flex;
-    justify-content: left;
-}
-.content{
-    margin-left: 3rem;
+    justify-content: flex-start;
 }
 
-.top_section
-{
-    margin-top: 100px;
-    display: flex ;
-    gap: 50rem;
-    align-items: end;
-    
+.content {
+    margin-left: 3rem;
+    width: 100%;
 }
-.parent{
+
+.top_section {
+    margin-top: 100px;
+    display: flex;
+    gap: 50rem;
+    align-items: flex-end;
+}
+
+.parent {
     gap: 18rem;
     margin-top: 12rem;
     display: flex;
-    justify-items: center;
     align-items: center;
 }
 
-.top_section h1{
+.top_section h1 {
     font-size: 4rem;
     font-weight: bold;
     color: #1d1e4c;
-    
 }
 
-.top_section h4{
-    display: flex;
+.top_section h4 {
     margin-right: 8rem;
     font-size: 2rem;
     text-align: end;
 }
 
-.image_container,.pf
-{
+.image_container, .pf {
     position: absolute;
     top: 4rem;
     left: 4rem;
@@ -61,59 +57,129 @@ body{
     width: 280px;
     border-radius: 7%;
     overflow: hidden;
-    
+    object-fit: cover;
 }
 
-.about_section h2{
-    padding-left: 3rem;
+.about_section h2,
+.about_section2 h2,
+.about_section3 h2 {
+    padding-left: 4rem;
     font-weight: bold;
-    text-align: left;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    
 }
 
-
-.about_section p{
-    padding-left: 3rem;
+.about_section p,
+.about_section2 p,
+.about_section3 p {
+    padding-left: 4rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
-.parent i{
+
+.parent i {
     font-size: 1.5rem;
     padding-left: 2.5rem;
     margin-bottom: 1rem;
-    position:absolute;
-    justify-items: auto;
-    
+    position: absolute;
 }
 
-.about_section2 h2{
-    padding-left: 4rem;
-    font-weight: bold;
-    text-align: left;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    
-}
-.about_section2 p{
-    padding-left: 4rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        border-width: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 2rem 0;
+        width: 100%;
+    }
+
+    .top_section {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image_container, .pf {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 400px;
+        width: 350px;
+        margin: 0 auto 2rem auto;
+    }
+
+    .top_section h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .top_section h4 {
+        font-size: 1.8rem;
+        margin-right: 0;
+        text-align: center;
+        color: #333;
+    }
+
+    .parent {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .about_section h2,
+    .about_section2 h2,
+    .about_section3 h2 {
+        padding-left: 0;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .about_section p,
+    .about_section2 p,
+    .about_section3 p {
+        padding-left: 0;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .parent i {
+        position: relative;
+        padding-left: 0;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
 }
 
-.about_section3 h2{
-    padding-left: 4rem;
-    font-weight: bold;
-    text-align: left;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    
-}
+@media (max-width: 480px) {
+    .top_section h1 {
+        font-size: 2.8rem;
+    }
 
-.about_section3 p{
-    padding-left: 4rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
+    .top_section h4 {
+        font-size: 1.4rem;
+    }
 
+    .image_container, .pf {
+        height: 300px;
+        width: 280px;
+    }
+
+    .about_section h2,
+    .about_section2 h2,
+    .about_section3 h2 {
+        font-size: 1.8rem;
+    }
+
+    .about_section p,
+    .about_section2 p,
+    .about_section3 p {
+        font-size: 1.1rem;
+    }
+}
