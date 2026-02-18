@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+nav :first-child{
+    padding: 12px 0 ;
+    background-color: rgb(97, 145, 241);
+}
+body{
+    width: 100vw;
+    height: 130vh;
+    background-color: rgb(252, 214, 252);
+}
+
+.container{
+        background-color: bisque;
+        width: 100vw;
+         height: 130vh;
+}
+
+.content1{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-inline-end: 4vw;
+    display: inline-flex;
+    border: 2px solid  black;
+    box-sizing: border-box;
+    width: 40vw;
+    height: 40vh;
+}
+.content2{
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-inline-start: 5vw;
+    display: inline-flex;
+    border: 2px solid  black;
+    box-sizing: border-box;
+    width: 40vw;
+    height: 40vh;
+}
+.box{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 25vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 75px;
+}
+
+ul li{
+    margin-left: 20px;
+    list-style: none;
+    display: inline;
+    padding: 23px;
+    font-weight: bolder;
+    font-size: large;
+    color: aliceblue;
+    
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.circle{
+    position: fixed;
+    margin-inline-start: 90rem;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 100%
+    
+}
+footer{
+    padding: 8px ;
+    background-color: rgb(196, 61, 61);
+}
